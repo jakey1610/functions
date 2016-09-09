@@ -4,6 +4,7 @@ def composite(f,g):
     #formatting basics:
     #x**2 is equal to x squared
     #x*(x+1) needs to be written to multiply two objects together
+    #4*x is 4x
     compfunc = []
     for letters in f:
         if letters == "x":
@@ -14,7 +15,7 @@ def composite(f,g):
             compfunc.append(letters)
     function = ""
     for letters in compfunc:
-        function += letters
+        function += str(letters)
 
     #expand the function here
 
@@ -22,3 +23,6 @@ def composite(f,g):
     print(expfunc)
 
 
+ffunc = input("Please enter one function: ")
+gfunc = input("Please enter another function: ")
+composite(ffunc, gfunc)
